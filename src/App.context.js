@@ -15,7 +15,7 @@ export const useAppContext = () => {
   }, [mahsulotlar]);
 
 
-
+// nimadur yangi logika qo'shildi, bolib tolash
 
 
 
