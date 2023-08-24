@@ -12,6 +12,7 @@ const Card = ({ mahsulot }) => {
     action: { mahsulotTanlash, onPlusClick, onMinusClick, tanlanganmiClick },
   } = useContext(AppContext);
   const navigate = useNavigate();
+  console.log(mahsulot.image);
   return (
     <StyledCard>
       <li className="mahsulot-card">
@@ -32,7 +33,7 @@ const Card = ({ mahsulot }) => {
         >
           {mahsulot.tanlanganmi === false
             ? "Savatchaga qo'shish"
-            : " Savatchadan olish  "}
+            : "Savatchadan olish"}
           <AddShoppingCartIcon />
         </button>
 

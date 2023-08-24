@@ -14,12 +14,7 @@ export const useAppContext = () => {
     localStorage.setItem("mahsulotlar", JSON.stringify(mahsulotlar));
   }, [mahsulotlar]);
 
-
-// nimadur yangi logika qo'shildi, bolib tolash
-
-
-
-
+  // nimadur yangi logika qo'shildi, bolib tolash
 
   const savatchaAlmashtirish = () => {
     setSavatchaOchiqmi(!savatchaOchiqmi);
@@ -36,24 +31,45 @@ export const useAppContext = () => {
     }
   };
   const mahsulotTanlash = (tanlanganMahsulot) => {
-    toast.success(
-      `Yangi mahsulot qo'shildi! ${tanlanganMahsulot.nomi}: ${tanlanganMahsulot.narxi}`,
-      {
-        position: "bottom-right",
-      }
-    );
-    const yangiMahsulotlar = mahsulotlar.map((mahsulot) => {
-      if (mahsulot.nomi === tanlanganMahsulot.nomi) {
-        return {
-          ...mahsulot,
-          tanlanganmi: true,
-          soni: 1,
-        };
-      } else {
-        return mahsulot;
-      }
-    });
-    setMahsulotlar(yangiMahsulotlar);
+    if (tanlanganMahsulot.tanlanganmi === false) {
+      toast.success(
+        `Yangi mahsulot qo'shildi! ${tanlanganMahsulot.nomi}: ${tanlanganMahsulot.narxi}`,
+        {
+          position: "bottom-right",
+        }
+      );
+      const yangiMahsulotlar = mahsulotlar.map((mahsulot) => {
+        if (mahsulot.nomi === tanlanganMahsulot.nomi) {
+          return {
+            ...mahsulot,
+            tanlanganmi: true,
+            soni: 1,
+          };
+        } else {
+          return mahsulot;
+        }
+      });
+      setMahsulotlar(yangiMahsulotlar);
+    } else {
+      toast.warn(
+        `Ushbu mahsulot savatchadan olindi! ${tanlanganMahsulot.nomi}: ${tanlanganMahsulot.narxi}`,
+        {
+          position: "bottom-right",
+        }
+      );
+      const yangiMahsulotlar = mahsulotlar.map((mahsulot) => {
+        if (mahsulot.nomi === tanlanganMahsulot.nomi) {
+          return {
+            ...mahsulot,
+            tanlanganmi: false,
+            soni: 0,
+          };
+        } else {
+          return mahsulot;
+        }
+      });
+      setMahsulotlar(yangiMahsulotlar);
+    }
   };
   const tanlanganmiClick = (tanlanganMahsulot) => {
     setMahsulotlar(

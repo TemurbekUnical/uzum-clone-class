@@ -1,4 +1,4 @@
-import { styled } from "styled-components";
+import styled from "styled-components";
 
 export const SlaydStyle = styled.div`
   height: 500px;
