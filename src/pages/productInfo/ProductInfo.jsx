@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import AppContext from "../../App.context";
 import { useParams } from "react-router-dom";
 import { StyledProductInfo } from "./ProductInfo.style";
@@ -7,8 +7,13 @@ const ProductInfo = () => {
   const { nomi } = useParams();
 
   const {
-    state: { mahsulotlar },
+    state: { mahsulotlar, korilganMahsulotlar },
+    action: { setKorilganMahsulotlar },
   } = useContext(AppContext);
+
+  useEffect(() => {
+    setKorilganMahsulotlar([bosilganMahsulot, ...korilganMahsulotlar]);
+  }, []);
 
   const bosilganMahsulot = mahsulotlar.find(
     (mahsulot) => mahsulot.nomi === nomi
@@ -17,24 +22,26 @@ const ProductInfo = () => {
   const [activeImage, setActiveImage] = useState(bosilganMahsulot.image[0]);
 
   return (
-    <StyledProductInfo>
-      <div className="images">
-        <img src={activeImage} className="active" alt="" />
-        <div className="not-active-images">
-          {bosilganMahsulot.image.map((img) => (
-            <img
-              onClick={() => setActiveImage(img)}
-              className={
-                "not-active " + (activeImage === img ? "curr-active" : "")
-              }
-              src={img}
-              alt=""
-            />
-          ))}
+    <div>
+      <StyledProductInfo>
+        <div className="images">
+          <img src={activeImage} className="active" alt="" />
+          <div className="not-active-images">
+            {bosilganMahsulot.image.map((img) => (
+              <img
+                onClick={() => setActiveImage(img)}
+                className={
+                  "not-active " + (activeImage === img ? "curr-active" : "")
+                }
+                src={img}
+                alt=""
+              />
+            ))}
+          </div>
         </div>
-      </div>
-      <div className="info">{bosilganMahsulot.nomi}</div>
-    </StyledProductInfo>
+        <div className="info">{bosilganMahsulot.nomi}</div>
+      </StyledProductInfo>
+    </div>
   );
 };
 

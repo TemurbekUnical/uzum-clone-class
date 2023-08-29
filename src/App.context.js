@@ -6,6 +6,7 @@ export const useAppContext = () => {
   const [mahsulotlar, setMahsulotlar] = useState(
     JSON.parse(localStorage.getItem("mahsulotlar")) || dataMahsulotlar
   );
+  const [korilganMahsulotlar, setKorilganMahsulotlar] = useState([]);
 
   const [izlanganMahsulotlar, setIzlanganMahsulotlar] = useState(mahsulotlar);
   const [savatchaOchiqmi, setSavatchaOchiqmi] = useState(false);
@@ -159,6 +160,7 @@ export const useAppContext = () => {
       mahsulotlarsoni,
       obshiySumma,
       tanlanganMahsulotlar,
+      korilganMahsulotlar,
     },
     action: {
       setMahsulotlar,
@@ -171,6 +173,7 @@ export const useAppContext = () => {
       onPlusClick,
       onMinusClick,
       mahsulotniSavatchadanChiqarish,
+      setKorilganMahsulotlar,
     },
   };
 };

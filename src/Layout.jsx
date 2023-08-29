@@ -23,7 +23,7 @@ const Layout = () => {
         />
         <Savatcha />
         <PagesRoutes />
-        {/* <Footer /> */}
+        <Footer />
       </AppStyled>
     </>
   );
