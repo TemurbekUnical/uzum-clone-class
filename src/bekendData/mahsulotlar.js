@@ -12,6 +12,8 @@ export const dataMahsulotlar = [
       "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=871&q=80",
     ],
     soni: 0,
+    malumot: "Krossovka adidas Erkaklar uchun KAPTIR SUPER",
+    sotuvchi: "adidos",
   },
   {
     nomi: "Klaviatura",
@@ -27,6 +29,8 @@ export const dataMahsulotlar = [
       "https://images.uzum.uz/ceekrool08kcldtorh10/original.jpg",
     ],
     soni: 0,
+    malumot: "Krossovka adidas Erkaklar uchun KAPTIR SUPER",
+    sotuvchi: "adidos",
   },
   {
     nomi: "Mishka",
@@ -39,6 +43,8 @@ export const dataMahsulotlar = [
       "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=765&q=80",
     ],
     soni: 0,
+    malumot: "Krossovka adidas Erkaklar uchun KAPTIR SUPER",
+    sotuvchi: "adidos",
   },
   {
     nomi: "Pechenye",
@@ -64,6 +70,8 @@ export const dataMahsulotlar = [
       "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=765&q=80",
     ],
     soni: 0,
+    malumot: "Krossovka adidas Erkaklar uchun KAPTIR SUPER",
+    sotuvchi: "adidos",
   },
   {
     nomi: "Choy",
@@ -74,6 +82,8 @@ export const dataMahsulotlar = [
       "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=765&q=80",
     ],
     soni: 0,
+    malumot: "Krossovka adidas Erkaklar uchun KAPTIR SUPER",
+    sotuvchi: "adidos",
   },
   {
     nomi: "Telefon",
@@ -85,6 +95,8 @@ export const dataMahsulotlar = [
       "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=765&q=80",
     ],
     soni: 0,
+    malumot: "Krossovka adidas Erkaklar uchun KAPTIR SUPER",
+    sotuvchi: "adidos",
   },
   {
     nomi: "koylak",
@@ -95,6 +107,8 @@ export const dataMahsulotlar = [
       "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=765&q=80",
     ],
     soni: 0,
+    malumot: "Krossovka adidas Erkaklar uchun KAPTIR SUPER",
+    sotuvchi: "adidos",
   },
   {
     nomi: "Fudbolka",
@@ -107,6 +121,8 @@ export const dataMahsulotlar = [
       "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=765&q=80",
     ],
     soni: 0,
+    malumot: "Krossovka adidas Erkaklar uchun KAPTIR SUPER",
+    sotuvchi: "adidos",
   },
   {
     nomi: "Stakan",
@@ -119,5 +135,7 @@ export const dataMahsulotlar = [
       "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=765&q=80",
     ],
     soni: 0,
+    malumot: "Krossovka adidas Erkaklar uchun KAPTIR SUPER",
+    sotuvchi: "adidos",
   },
 ];

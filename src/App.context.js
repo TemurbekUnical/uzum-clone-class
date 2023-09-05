@@ -151,6 +151,7 @@ export const useAppContext = () => {
   for (let i = 0; i < mahsulotsoni.length; i++) {
     mahsulotlarsoni = mahsulotlarsoni + mahsulotsoni[i].soni;
   }
+  
 
   return {
     state: {
