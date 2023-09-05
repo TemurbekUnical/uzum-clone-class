@@ -6,13 +6,15 @@ import Slayd from "./../../components/Slayd/Slayd";
 
 const Mahsulotlar = () => {
   const {
-    state: { mahsulotlar },
+    state: { mahsulotlar, kiritilganText },
   } = useContext(AppContext);
   return (
     <MahsulotlarStyled>
       <Slayd />
       <ul className="mahsulotlar-container">
-        {mahsulotlar.map((mahsulot) => (
+        {mahsulotlar.filter((maxsulot) =>
+          maxsulot.nomi.toLowerCase().includes(kiritilganText.toLowerCase())
+        ).map((mahsulot) => (
           <Card key={mahsulot.nomi} mahsulot={mahsulot} />
         ))}
       </ul>

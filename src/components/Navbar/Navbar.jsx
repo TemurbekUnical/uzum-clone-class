@@ -26,6 +26,7 @@ const Navbar = ({ savatchaAlmashtirish, mahsulotlarniIzlash }) => {
           onChange={(e) => mahsulotlarniIzlash(e.target.value)}
           placeholder="Mahsulotlar va turkumlar izlash... "
         />
+        
         <div className="button-wp" onClick={() => navigate("/login")}>
           {/*   <PersonOutlineOutlinedIcon />  */}
           <p>Kirish</p>
