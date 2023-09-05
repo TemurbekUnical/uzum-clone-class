@@ -26,7 +26,6 @@ export const NavbarStyled = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-
     font-size: 14px;
     font-weight: 500;
     text-align: center;
@@ -35,6 +34,9 @@ export const NavbarStyled = styled.div`
     width: 120px;
     height: 40px;
     background-color: rgba(49, 49, 196, 0.1);
+    .buttonIcon{
+      margin-right: 5px;
+    }
   }
   .button-wp {
     display: flex;
