@@ -1,15 +1,31 @@
-import LibraryBooksIcon from "@mui/icons-material/LibraryBooks";
-import React from "react";
+import React, { useContext } from "react";
 // import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import { useNavigate } from "react-router-dom";
 import { NavbarStyled } from "./Navbar.style";
+import Catalogs from "./components/Catalogs";
+import AppContext from "../../App.context";
+
+
+import AutoAwesomeMotionOutlinedIcon from '@mui/icons-material/AutoAwesomeMotionOutlined';
+
+
+
+
 
 const Navbar = ({ savatchaAlmashtirish, mahsulotlarniIzlash }) => {
+
+
+
   const navigate = useNavigate();
+
+  const {
+    action: { setCatalogochiqmi }
+  } = useContext(AppContext)
   return (
     <NavbarStyled>
+      <Catalogs />
       <div className="nav-wrapper">
         <img
           onClick={() => navigate("/")}
@@ -17,8 +33,8 @@ const Navbar = ({ savatchaAlmashtirish, mahsulotlarniIzlash }) => {
           alt="Uzum"
           className="noselect hidden-mbs visible-mbm logo"
         ></img>
-        <div className="button-wr">
-          <LibraryBooksIcon /> Katalog
+        <div className="button-wr" onClick={() => setCatalogochiqmi(true)}>
+            <AutoAwesomeMotionOutlinedIcon className="buttonIcon"/>Katalog
         </div>
         <input
           type="text"
