@@ -8,7 +8,7 @@ export const useAppContext = () => {
   );
   const [korilganMahsulotlar, setKorilganMahsulotlar] = useState([]);
 
-  const [izlanganMahsulotlar, setIzlanganMahsulotlar] = useState(mahsulotlar);
+  const [kiritilganText, setKiritilganText] = useState("")
   const [savatchaOchiqmi, setSavatchaOchiqmi] = useState(false);
 
   useEffect(() => {
@@ -22,13 +22,10 @@ export const useAppContext = () => {
   };
   const mahsulotlarniIzlash = (izlanayotganText) => {
     if (izlanayotganText) {
-      setIzlanganMahsulotlar(
-        mahsulotlar.filter((maxsulot) =>
-          maxsulot.nomi.toLowerCase().includes(izlanayotganText.toLowerCase())
-        )
-      );
+      setKiritilganText(izlanayotganText);
+
     } else {
-      setIzlanganMahsulotlar(mahsulotlar);
+      setKiritilganText("");
     }
   };
   const mahsulotTanlash = (tanlanganMahsulot) => {
@@ -156,23 +153,24 @@ export const useAppContext = () => {
     mahsulotlarsoni = mahsulotlarsoni + mahsulotsoni[i].soni;
   }
 
+
   return {
     state: {
       mahsulotlar,
       savatchaOchiqmi,
-      izlanganMahsulotlar,
       mahsulotlarsoni,
       obshiySumma,
       tanlanganMahsulotlar,
-      korilganMahsulotlar, Catologochiqmi
-
+      korilganMahsulotlar,
+      kiritilganText,
+      korilganMahsulotlar, 
+      Catologochiqmi
     },
     action: {
       setMahsulotlar,
       setSavatchaOchiqmi,
       mahsulotlarniIzlash,
       savatchaAlmashtirish,
-      setIzlanganMahsulotlar,
       mahsulotTanlash,
       tanlanganmiClick,
       onPlusClick,

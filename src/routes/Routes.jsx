@@ -3,6 +3,7 @@ import ProductInfo from "../pages/productInfo/ProductInfo";
 import LikedProducts from "./../pages/likedProducts/LikedProducts";
 import Mahsulotlar from "./../pages/mahsulotlar/Mahsulotlar";
 import Profile from "../pages/profile/Profile";
+import SotibOlish from "../pages/sotibOlish/SotibOlish";
 
 const router = [
   {
@@ -21,6 +22,11 @@ const router = [
     path: "/profile/*",
     element: <Profile />,
   },
+  {
+    path: "/sotib-olish",
+    element: <SotibOlish />,
+  },
+
   // shu joyga yozamiz login ni page sini
 ];
 export default function PagesRoutes() {
