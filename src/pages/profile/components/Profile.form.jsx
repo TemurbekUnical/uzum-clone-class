@@ -51,7 +51,17 @@ const ProfileForm = () => {
           </li>
         </ul>
         <Divider />
-
+        <ul className="sana">
+          <li>
+            <label
+              htmlFor="Tugʻilgan sana
+"
+            >
+              Tugʻilgan sana
+            </label>
+            <input type="date" placeholder="kk/oo/yyyy" />
+          </li>
+        </ul>
       </div>
     </div>
   );
