@@ -163,7 +163,6 @@ export const useAppContext = () => {
       tanlanganMahsulotlar,
       korilganMahsulotlar,
       kiritilganText,
-      korilganMahsulotlar, 
       Catologochiqmi
     },
     action: {
