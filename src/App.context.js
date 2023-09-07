@@ -39,6 +39,7 @@ export const useAppContext = () => {
           position: "bottom-right",
         }
       );
+
       const yangiMahsulotlar = mahsulotlar.map((mahsulot) => {
         if (mahsulot.nomi === tanlanganMahsulot.nomi) {
           return {
@@ -133,6 +134,9 @@ export const useAppContext = () => {
     });
     setMahsulotlar(yangiMaxsulotlar);
   };
+
+  const [Catologochiqmi, setCatalogochiqmi] = useState(false);
+
   // obshiy summa
   let obshiySumma = 0;
   const tanlanganMahsulotlar = mahsulotlar.filter(
@@ -160,7 +164,8 @@ export const useAppContext = () => {
       mahsulotlarsoni,
       obshiySumma,
       tanlanganMahsulotlar,
-      korilganMahsulotlar,
+      korilganMahsulotlar, Catologochiqmi
+
     },
     action: {
       setMahsulotlar,
@@ -174,6 +179,7 @@ export const useAppContext = () => {
       onMinusClick,
       mahsulotniSavatchadanChiqarish,
       setKorilganMahsulotlar,
+      setCatalogochiqmi,
     },
   };
 };
