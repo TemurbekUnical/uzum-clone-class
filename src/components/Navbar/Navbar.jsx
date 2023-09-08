@@ -6,8 +6,8 @@ import { useNavigate } from "react-router-dom";
 import { NavbarStyled } from "./Navbar.style";
 import Catalogs from "./components/Catalogs";
 import AppContext from "../../App.context";
-
 import AutoAwesomeMotionOutlinedIcon from "@mui/icons-material/AutoAwesomeMotionOutlined";
+import Search from "./Search";
 
 const Navbar = ({ savatchaAlmashtirish, mahsulotlarniIzlash }) => {
   const navigate = useNavigate();
@@ -29,13 +29,15 @@ const Navbar = ({ savatchaAlmashtirish, mahsulotlarniIzlash }) => {
           <AutoAwesomeMotionOutlinedIcon className="buttonIcon" />
           Katalog
         </div>
-        <input
+        <Search />
+        {/* <input
           type="text"
           className="search-input"
           onChange={(e) => mahsulotlarniIzlash(e.target.value)}
           placeholder="Mahsulotlar va turkumlar izlash... "
-        />
-        <div className="button-wp" onClick={() => navigate("/profile")}>
+        /> */}
+
+        <div className="button-wp" onClick={() => navigate("/login")}>
           {/*   <PersonOutlineOutlinedIcon />  */}
           <p>Kirish</p>
         </div>
