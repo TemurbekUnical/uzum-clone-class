@@ -22,7 +22,8 @@ import ConstructionOutlinedIcon from '@mui/icons-material/ConstructionOutlined';
 const Catalogs = () => {
     const {
         state: {
-            Catologochiqmi
+            Catologochiqmi,
+            catalogs,
         },
         action: { setCatalogochiqmi }
     } = useContext(AppContext)
@@ -49,62 +50,17 @@ const Catalogs = () => {
                                             onChange={handleChange}
                                             aria-label="lab API tabs example"
                                         >
-                                            <Tab label={
-                                                <p>
-                                                    <HeadphonesIcon />
-                                                    Elektronika
-                                                </p>
-                                            } value="1"
-                                            />
-                                            <Tab label={
-                                                <p>
-                                                    <BlenderIcon />
-                                                    Maishiy-texnikalar
-                                                </p>
-                                            } value="2" />
+                                            {
+                                                catalogs.map(item => <Tab label={
+                                                    <p>
+                                                        {item.name}
+                                                    </p>
+                                                } value="1"
+                                                />)
+                                            }
 
-                                            <Tab label={
-                                                <p>
-                                                    <CheckroomIcon />
-                                                    Kiyim
-                                                </p>
-                                            } value="3" />
-                                            <Tab label={
-                                                <p>
-                                                    <IceSkatingIcon />
-                                                    Poyabzallar
-                                                </p>
-                                            } value="4" />
-                                            <Tab label={
-                                                <p>
-                                                    <ShoppingBagIcon />
-                                                    Aksessuarlar
-                                                </p>
-                                            } value="5" />
-                                            <Tab label={
-                                                <p>
-                                                    <VolunteerActivismIcon />
-                                                    Go'zallik
-                                                </p>
-                                            } value="6" />
-                                            <Tab label={
-                                                <p>
-                                                    <MedicalInformationIcon />
-                                                    Salomatlik
-                                                </p>
-                                            } value="7" />
-                                            <Tab label={
-                                                <p>
-                                                    <CountertopsIcon />
-                                                    Uy-rozg'or
-                                                </p>
-                                            } value="8" />
-                                            <Tab label={
-                                                <p>
-                                                    <ConstructionOutlinedIcon />
-                                                    Qurilish, ta'mirlash
-                                                </p>
-                                            } value="9" />
+
+
                                         </TabList>
                                     </div>
                                 </Box>
@@ -112,7 +68,7 @@ const Catalogs = () => {
                                     <TabPanel value="1">
                                         <h3>Elektronika</h3>
                                         <div class="parent">
-                                            
+
                                             <div class="div1">
                                                 <h5>Smartfon va telefonlar</h5>
                                                 <p>Aksessuarlar va ehtiyot qismlari</p>
@@ -123,7 +79,7 @@ const Catalogs = () => {
                                             </div>
 
                                             <div class="div2">
-                                            <h5>Aqilli soatlar va fitnes bilaguzuklar</h5>
+                                                <h5>Aqilli soatlar va fitnes bilaguzuklar</h5>
                                                 <p>loremasdasdasdasdas</p>
                                                 <p>loremasdasdasdasdas</p>
                                                 <p>loremasdasdasdasdas</p>
@@ -132,7 +88,7 @@ const Catalogs = () => {
                                             </div>
 
                                             <div class="div3">
-                                            <h5>Noutbuklar, planshetlar va elektron kitoblar</h5>
+                                                <h5>Noutbuklar, planshetlar va elektron kitoblar</h5>
                                                 <p>loremasdasdasdasdas</p>
                                                 <p>loremasdasdasdasdas</p>
                                                 <p>loremasdasdasdasdas</p>
@@ -141,7 +97,7 @@ const Catalogs = () => {
                                             </div>
 
                                             <div class="div4">
-                                            <h5>Kompyuter texnikasi</h5>
+                                                <h5>Kompyuter texnikasi</h5>
                                                 <p>loremasdasdasdasdas</p>
                                                 <p>loremasdasdasdasdas</p>
                                                 <p>loremasdasdasdasdas</p>
@@ -150,7 +106,7 @@ const Catalogs = () => {
                                             </div>
 
                                             <div class="div5">
-                                            <h5>Quloqchinlar va audio texnologiyalar</h5>
+                                                <h5>Quloqchinlar va audio texnologiyalar</h5>
                                                 <p>loremasdasdasdasdas</p>
                                                 <p>loremasdasdasdasdas</p>
                                                 <p>loremasdasdasdasdas</p>
@@ -159,16 +115,16 @@ const Catalogs = () => {
                                             </div>
 
                                             <div class="div6">
-                                            <h5>Foto va video texnika</h5>
+                                                <h5>Foto va video texnika</h5>
                                                 <p>loremasdasdasdasdas</p>
                                                 <p>loremasdasdasdasdas</p>
                                                 <p>loremasdasdasdasdas</p>
                                                 <p>loremasdasdasdasdas</p>
                                                 <p>loremasdasdasdasdas</p>
                                             </div>
-                                            
+
                                             <div class="div7">
-                                            <h5>Soatlar va elektron budulniklar</h5>
+                                                <h5>Soatlar va elektron budulniklar</h5>
                                                 <p>loremasdasdasdasdas</p>
                                                 <p>loremasdasdasdasdas</p>
                                                 <p>loremasdasdasdasdas</p>
@@ -176,7 +132,7 @@ const Catalogs = () => {
                                                 <p>loremasdasdasdasdas</p>
                                             </div>
                                             <div class="div8">
-                                            <h5>Aqlli uy va xavfsizlik</h5>
+                                                <h5>Aqlli uy va xavfsizlik</h5>
                                                 <p>loremasdasdasdasdas</p>
                                                 <p>loremasdasdasdasdas</p>
                                                 <p>loremasdasdasdasdas</p>
@@ -187,9 +143,9 @@ const Catalogs = () => {
                                     </TabPanel>
 
                                     <TabPanel value="2">
-                                    <h3>Maishiy texnikalar</h3>
+                                        <h3>Maishiy texnikalar</h3>
                                         <div class="parent">
-                                            
+
                                             <div class="div1">
                                                 <h5>Smartfon va telefonlar</h5>
                                                 <p>Aksessuarlar va ehtiyot qismlari</p>
@@ -200,7 +156,7 @@ const Catalogs = () => {
                                             </div>
 
                                             <div class="div2">
-                                            <h5>Aqilli soatlar va fitnes bilaguzuklar</h5>
+                                                <h5>Aqilli soatlar va fitnes bilaguzuklar</h5>
                                                 <p>loremasdasdasdasdas</p>
                                                 <p>loremasdasdasdasdas</p>
                                                 <p>loremasdasdasdasdas</p>
@@ -209,7 +165,7 @@ const Catalogs = () => {
                                             </div>
 
                                             <div class="div3">
-                                            <h5>Noutbuklar, planshetlar va elektron kitoblar</h5>
+                                                <h5>Noutbuklar, planshetlar va elektron kitoblar</h5>
                                                 <p>loremasdasdasdasdas</p>
                                                 <p>loremasdasdasdasdas</p>
                                                 <p>loremasdasdasdasdas</p>
@@ -218,16 +174,16 @@ const Catalogs = () => {
                                             </div>
 
                                             <div class="div4">
-                                            <h5>Kompyuter texnikasi</h5>
+                                                <h5>Kompyuter texnikasi</h5>
                                                 <p>loremasdasdasdasdas</p>
                                                 <p>loremasdasdasdasdas</p>
                                                 <p>loremasdasdasdasdas</p>
                                                 <p>loremasdasdasdasdas</p>
                                                 <p>loremasdasdasdasdas</p>
                                             </div>
-                                            
+
                                             <div class="div5">
-                                            <h5>Soatlar va elektron budulniklar</h5>
+                                                <h5>Soatlar va elektron budulniklar</h5>
                                                 <p>loremasdasdasdasdas</p>
                                                 <p>loremasdasdasdasdas</p>
                                                 <p>loremasdasdasdasdas</p>
@@ -238,13 +194,13 @@ const Catalogs = () => {
                                     </TabPanel>
 
                                     <TabPanel value="3">
-                                    <h3>Kiyim</h3>
+                                        <h3>Kiyim</h3>
                                         <div class="parent">
-                                        
-        
-                                            
+
+
+
                                             <div class="div1">
-                                            <h5>Soatlar va elektron budulniklar</h5>
+                                                <h5>Soatlar va elektron budulniklar</h5>
                                                 <p>loremasdasdasdasdas</p>
                                                 <p>loremasdasdasdasdas</p>
                                                 <p>loremasdasdasdasdas</p>
@@ -252,7 +208,7 @@ const Catalogs = () => {
                                                 <p>loremasdasdasdasdas</p>
                                             </div>
                                             <div class="div2">
-                                            <h5>Aqlli uy va xavfsizlik</h5>
+                                                <h5>Aqlli uy va xavfsizlik</h5>
                                                 <p>loremasdasdasdasdas</p>
                                                 <p>loremasdasdasdasdas</p>
                                                 <p>loremasdasdasdasdas</p>
