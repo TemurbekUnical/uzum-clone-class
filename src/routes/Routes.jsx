@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import ProductInfo from "../pages/productInfo/ProductInfo";
 import LikedProducts from "./../pages/likedProducts/LikedProducts";
 import Mahsulotlar from "./../pages/mahsulotlar/Mahsulotlar";
-import Login from "./../pages/login/Login";
+import Profile from "../pages/profile/Profile";
 import SotibOlish from "../pages/sotibOlish/SotibOlish";
 
 const router = [
@@ -19,8 +19,8 @@ const router = [
     element: <LikedProducts />,
   },
   {
-    path: "/login",
-    element: <Login />,
+    path: "/profile/*",
+    element: <Profile />,
   },
   {
     path: "/sotib-olish",

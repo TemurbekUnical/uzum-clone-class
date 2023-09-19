@@ -7,22 +7,14 @@ import { NavbarStyled } from "./Navbar.style";
 import Catalogs from "./components/Catalogs";
 import AppContext from "../../App.context";
 
-
-import AutoAwesomeMotionOutlinedIcon from '@mui/icons-material/AutoAwesomeMotionOutlined';
-
-
-
-
+import AutoAwesomeMotionOutlinedIcon from "@mui/icons-material/AutoAwesomeMotionOutlined";
 
 const Navbar = ({ savatchaAlmashtirish, mahsulotlarniIzlash }) => {
-
-
-
   const navigate = useNavigate();
 
   const {
-    action: { setCatalogochiqmi }
-  } = useContext(AppContext)
+    action: { setCatalogochiqmi },
+  } = useContext(AppContext);
   return (
     <NavbarStyled>
       <Catalogs />
@@ -34,7 +26,8 @@ const Navbar = ({ savatchaAlmashtirish, mahsulotlarniIzlash }) => {
           className="noselect hidden-mbs visible-mbm logo"
         ></img>
         <div className="button-wr" onClick={() => setCatalogochiqmi(true)}>
-            <AutoAwesomeMotionOutlinedIcon className="buttonIcon"/>Katalog
+          <AutoAwesomeMotionOutlinedIcon className="buttonIcon" />
+          Katalog
         </div>
         <input
           type="text"
@@ -42,8 +35,7 @@ const Navbar = ({ savatchaAlmashtirish, mahsulotlarniIzlash }) => {
           onChange={(e) => mahsulotlarniIzlash(e.target.value)}
           placeholder="Mahsulotlar va turkumlar izlash... "
         />
-        
-        <div className="button-wp" onClick={() => navigate("/login")}>
+        <div className="button-wp" onClick={() => navigate("/profile")}>
           {/*   <PersonOutlineOutlinedIcon />  */}
           <p>Kirish</p>
         </div>

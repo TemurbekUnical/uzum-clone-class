@@ -5,8 +5,24 @@ export const dataCatalog = [
         items: [
             {
                 name: "smartfonlar",
-                
-            }
+                subkategoriya: [
+                    {
+                        name: "Samsung",
+                    },
+                    {
+                        name: "Apple",
+                    },
+                ]
+
+            },
+            {
+                name: "Soatlar",
+
+            },
+            {
+                name: "naushniki",
+
+            },
         ]
     },
 
@@ -15,8 +31,11 @@ export const dataCatalog = [
         name: "maishiy-texnika",
         items: [
             {
-                name: "maishiy-texnika",
-                
+                name: "xaladinik"
+
+            },
+            {
+                name: "gaz plita",
             }
         ]
     },
@@ -25,8 +44,8 @@ export const dataCatalog = [
         name: "kiyim",
         items: [
             {
-                name: "kiyim",
-                
+                name: "fugbola",
+
             }
         ]
     },
@@ -34,20 +53,23 @@ export const dataCatalog = [
         name: "poyabzallar",
         items: [
             {
-                name: "poyabzallar",
-                
+                name: "tufli",
+
             }
         ]
     },
-     {
-        name: "aksessuarlar",
+    {
+        name: "Sport",
         items: [
             {
-                name: "aksessuarlar",
-                
-            }
+                name: "Protein",
+
+
+            },
+            {
+                name: "Creatin",
+
+            },
         ]
     },
-
-
 ]
