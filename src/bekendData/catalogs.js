@@ -1,75 +1,66 @@
 
-export const dataCatalog = [
+export const categories = [
     {
         name: "elektronika",
         items: [
             {
                 name: "smartfonlar",
-                subkategoriya: [
+                categories: [
                     {
-                        name: "Samsung",
-                    },
-                    {
-                        name: "Apple",
-                    },
+                        name: '',
+                        link: ''
+                    }
                 ]
-
-            },
-            {
-                name: "Soatlar",
-
-            },
-            {
-                name: "naushniki",
-
-            },
-        ]
-    },
-
-
-    {
-        name: "maishiy-texnika",
-        items: [
-            {
-                name: "xaladinik"
-
-            },
-            {
-                name: "gaz plita",
             }
         ]
     },
 
+
     {
-        name: "kiyim",
+        name: "elektronika",
         items: [
             {
-                name: "fugbola",
-
+                name: "smartfonlar",
+                categories: [
+                    {
+                        name: '',
+                        link: ''
+                    }
+                ]
             }
         ]
     },
+
+
     {
-        name: "poyabzallar",
+        name: "elektronika",
         items: [
             {
-                name: "tufli",
-
+                name: "smartfonlar",
+                categories: [
+                    {
+                        name: '',
+                        link: ''
+                    }
+                ]
             }
         ]
     },
+
+
     {
-        name: "Sport",
+        name: "elektronika",
         items: [
             {
-                name: "Protein",
-
-
-            },
-            {
-                name: "Creatin",
-
-            },
+                name: "smartfonlar",
+                categories: [
+                    {
+                        name: '',
+                        link: ''
+                    }
+                ]
+            }
         ]
     },
+
 ]

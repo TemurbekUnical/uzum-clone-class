@@ -1,11 +1,11 @@
 import React, { useContext } from "react";
 // import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
+import AutoAwesomeMotionOutlinedIcon from "@mui/icons-material/AutoAwesomeMotionOutlined";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import { useNavigate } from "react-router-dom";
-import { NavbarStyled } from "./Navbar.style";
-import Catalogs from "./components/Catalogs";
 import AppContext from "../../App.context";
+<<<<<<< HEAD
 import AutoAwesomeMotionOutlinedIcon from '@mui/icons-material/AutoAwesomeMotionOutlined';
 import Search from "./Search";
 
@@ -13,6 +13,11 @@ import Search from "./Search";
 
 
 
+=======
+import { NavbarStyled } from "./Navbar.style";
+import Search from "./Search";
+import Catalogs from "./components/Catalogs";
+>>>>>>> 45aff5f9b02b62dce883f3f37935c8e2fc252b36
 
 const Navbar = ({ savatchaAlmashtirish, mahsulotlarniIzlash }) => {
   const navigate = useNavigate();
@@ -22,7 +27,6 @@ const Navbar = ({ savatchaAlmashtirish, mahsulotlarniIzlash }) => {
   } = useContext(AppContext);
   return (
     <NavbarStyled>
-      <Catalogs />
       <div className="nav-wrapper">
         <img
           onClick={() => navigate("/")}
@@ -34,6 +38,7 @@ const Navbar = ({ savatchaAlmashtirish, mahsulotlarniIzlash }) => {
           <AutoAwesomeMotionOutlinedIcon className="buttonIcon" />
           Katalog
         </div>
+<<<<<<< HEAD
         <Search/>
         {/* <input
           type="text"
@@ -47,6 +52,12 @@ const Navbar = ({ savatchaAlmashtirish, mahsulotlarniIzlash }) => {
         /> */}
         
         <div className="button-wp" onClick={() => navigate("/login")}>
+=======
+        <Catalogs />
+        <Search />
+
+        <div className="button-wp" onClick={() => navigate("/profile")}>
+>>>>>>> 45aff5f9b02b62dce883f3f37935c8e2fc252b36
           {/*   <PersonOutlineOutlinedIcon />  */}
           <p>Kirish</p>
         </div>
@@ -60,17 +71,39 @@ const Navbar = ({ savatchaAlmashtirish, mahsulotlarniIzlash }) => {
       <div className="nav-content">
         <h5>Halol nasiya</h5>
         <ul>
-          <li>Elektironika</li>
-          <li>Maishiy texnika</li>
-          <li>Kiyim</li>
-          <li>Poyabzal</li>
-          <li>Aksesuarlar</li>
-          <li>Gozallik</li>
-          <li>Salomatlik</li>
-          <li>Uy-rozgor buyumlar</li>
-          <li>Qurilish va tamirlash </li>
-          <li>Avto tolovlar</li>
-          <li>Yana</li>
+          <li>
+            <a href="#">Elektironika</a>
+          </li>
+          <li>
+            <a href="#">Maishiy texnika</a>
+          </li>
+          <li>
+            <a href="#">Kiyim</a>
+          </li>
+          <li>
+            <a href="#">Poyabzal</a>
+          </li>
+          <li>
+            <a href="#">Aksesuarlar</a>
+          </li>
+          <li>
+            <a href="#">Gozallik</a>
+          </li>
+          <li>
+            <a href="#">Salomatlik</a>
+          </li>
+          <li>
+            <a href="#">Uy-rozgor buyumlar</a>
+          </li>
+          <li>
+            <a href="#">Qurilish va tamirlash</a>{" "}
+          </li>
+          <li>
+            <a href="#">Avto tolovlar</a>
+          </li>
+          <li>
+            <a href="#">Yana</a>
+          </li>
         </ul>
       </div>
     </NavbarStyled>
