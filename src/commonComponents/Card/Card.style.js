@@ -6,10 +6,11 @@ export const StyledCard = styled.div`
     position: relative;
     img {
       object-fit: cover;
+      transition: 0.3s;
+
     }
     & img:hover {
-      transition: 0.3s;
-      transform: scale(1.05);
+      /* transform: scale(1.05); */
     }
     .birga{
       .nomi{
