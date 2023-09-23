@@ -4,9 +4,18 @@ export const StyledCard = styled.div`
   padding: 0;
   .mahsulot-card {
     position: relative;
-    & img:hover {
+    img {
+      object-fit: cover;
       transition: 0.3s;
-      transform: scale(1.05);
+
+    }
+    & img:hover {
+      /* transform: scale(1.05); */
+    }
+    .birga{
+      .nomi{
+        margin-bottom: 15px;
+      }
     }
     button {
       cursor: pointer;
@@ -21,12 +30,12 @@ export const StyledCard = styled.div`
     justify-content: center;
 
     .button-bir {
-      background: rgb(37, 190, 205);
-      background: linear-gradient(
+      background: rgb(112, 0, 255);
+      /* background: linear-gradient(
         90deg,
         rgba(37, 190, 205, 1) 9%,
         rgba(150, 180, 190, 0.9976365546218487) 100%
-      );
+      ); */
       width: 100%;
       border: none;
       cursor: pointer;
@@ -34,6 +43,11 @@ export const StyledCard = styled.div`
       color: white;
       padding: 3px;
       font-size: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 6px;
+      gap: 5px;
       &:disabled {
         cursor: not-allowed;
         opacity: 0.5;

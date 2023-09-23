@@ -7,7 +7,8 @@ export const SavatchaStyled = styled.div`
     gap: 0;
   }
   .savatchadagi-mahsulotlar {
-    display: flex;
+    display: flex; 
+
   }
 `;
 
@@ -19,8 +20,9 @@ export const SavatchaniIchiStyled = styled.div`
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 5px;
     img {
-      width: 30%;
+      width: 100%;
     }
     .nomi {
       width: 30%;
@@ -33,6 +35,11 @@ export const SavatchaniIchiStyled = styled.div`
     .button-bir {
       width: 30%;
       order: 5;
+      padding: 6px;
+      display: flex;
+      gap: .5px;
+      align-items: center;
+      background-color: rgb(112, 0, 255);
     }
     .mahsulotQoshish {
       width: 10%;
@@ -43,6 +50,7 @@ export const SavatchaniIchiStyled = styled.div`
     .tanlanganmi {
       top: 0;
       right: 0;
+      background: none;
     }
   }
 `;

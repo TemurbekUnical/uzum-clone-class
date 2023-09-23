@@ -22,7 +22,7 @@ const ProductInfo = () => {
     (mahsulot) => mahsulot.nomi === nomi
   );
 
-  const [activeImage, setActiveImage] = useState(bosilganMahsulot.image[0]);
+  const [activeImage, setActiveImage] = useState(bosilganMahsulot.image[1]);
 
   return (
     <div>
@@ -57,21 +57,10 @@ const ProductInfo = () => {
               <p className="narxx">{bosilganMahsulot.narxi}$</p>
             </div>
           </div>
-          <div className="muddat">
-            <div className="yellow">{bosilganMahsulot.muddat} $ dan</div>
-            <p>muddatli to'lov</p>
-            <div className="arrow">
-              <ArrowForwardIos />
-            </div>
-          </div>
-          <div className="haqida">
-            <h1>Mahsulot haqida qisqacha:</h1>
-            <div>{bosilganMahsulot.haqida}</div>
-          </div>
         </div>
-      </StyledProductInfo >
-      <InfoSharx />
-    </div >
+      </StyledProductInfo>
+      <InfoSharx bosilganMahsulot={bosilganMahsulot} />
+    </div>
   );
 };
 
