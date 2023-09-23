@@ -52,7 +52,7 @@ const Catalogs = () => {
                                         >
                                             {
                                                 catalogs.map(item => <Tab key={item.name} label={
-                                                    <p>
+                                                    <p className='title'>
                                                         {item.name}
                                                     </p>
                                                 } value={item.name}
@@ -64,15 +64,16 @@ const Catalogs = () => {
                                         </TabList>
                                     </div>
                                 </Box>
-                                <div className='infoBox'>
+
+                                <div>
                                     {
                                         catalogs.map(item => <TabPanel key={item.name} value={item.name} className="infoBox">
-                                            {item.items.map(subCategory => <h1>
+                                            {item.items.map(subCategory => <p>
                                                 {subCategory.name}
                                                 {subCategory.subkategoriya?.map(sub => <div key={sub.name}>
                                                     <p>{sub.name}</p>
                                                 </div>)}
-                                            </h1>)}
+                                            </p>)}
                                         </TabPanel>)
                                     }
                                 </div>

@@ -172,7 +172,7 @@ export const useAppContext = () => {
       kiritilganText,
       korilganMahsulotlar,
       Catologochiqmi,
-      catalogs
+      catalogs,
     },
     action: {
       setMahsulotlar,
