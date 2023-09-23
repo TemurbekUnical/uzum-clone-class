@@ -1,6 +1,7 @@
 import { createContext, useState, useEffect } from "react";
 import { dataMahsulotlar } from "./bekendData/mahsulotlar";
 import { toast } from "react-toastify";
+import { categories } from "./bekendData/catalogs";
 
 export const useAppContext = () => {
   const [mahsulotlar, setMahsulotlar] = useState(
@@ -15,7 +16,13 @@ export const useAppContext = () => {
     localStorage.setItem("mahsulotlar", JSON.stringify(mahsulotlar));
   }, [mahsulotlar]);
 
-  // nimadur yangi logika qo'shildi, bolib tolash
+  // BU KATALOG LOGICASI 
+
+
+  const catalogs =
+    JSON.parse(localStorage.getItem("catalogs")) || categories
+
+
 
   const savatchaAlmashtirish = () => {
     setSavatchaOchiqmi(!savatchaOchiqmi);
@@ -163,7 +170,9 @@ export const useAppContext = () => {
       tanlanganMahsulotlar,
       korilganMahsulotlar,
       kiritilganText,
-      Catologochiqmi
+      korilganMahsulotlar,
+      Catologochiqmi,
+      catalogs,
     },
     action: {
       setMahsulotlar,

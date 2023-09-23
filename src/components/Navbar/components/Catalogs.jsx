@@ -1,81 +1,78 @@
+import * as React from 'react';
+import TabContext from '@mui/lab/TabContext';
+import TabList from '@mui/lab/TabList';
+import TabPanel from '@mui/lab/TabPanel';
 import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
 import Drawer from "@mui/material/Drawer";
-import List from "@mui/material/List";
-import { useContext, useState } from "react";
+import Tab from '@mui/material/Tab';
+import { useContext } from "react";
 import AppContext from "../../../App.context";
 import { CatalogsStyled } from "./Catalogs.style";
 
 import HeadphonesIcon from '@mui/icons-material/Headphones';
 import BlenderIcon from '@mui/icons-material/Blender';
 import CheckroomIcon from '@mui/icons-material/Checkroom';
+import IceSkatingIcon from '@mui/icons-material/IceSkating';
+import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
+import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
+import MedicalInformationIcon from '@mui/icons-material/MedicalInformation';
+import CountertopsIcon from '@mui/icons-material/Countertops';
+import ConstructionOutlinedIcon from '@mui/icons-material/ConstructionOutlined';
 
 const Catalogs = () => {
-
     const {
         state: {
-            Catologochiqmi
+            Catologochiqmi,
+            catalogs,
         },
         action: { setCatalogochiqmi }
     } = useContext(AppContext)
 
+
+    const [value, setValue] = React.useState('1');
+
+    const handleChange = (event, newValue) => {
+        setValue(newValue);
+    }
+
     return (
-        <Drawer anchor={"top"} open={Catologochiqmi} onClose={() => setCatalogochiqmi(false)}>
+        <Drawer anchor={"bottom"} open={Catologochiqmi} onClose={() => setCatalogochiqmi(false)}>
             <CatalogsStyled>
-                <Box className="headerBox">
-                    <div className="navCatalogs" >
-                        <ul>
-                            <li><HeadphonesIcon />Elektronika</li>
-                            <li><BlenderIcon />Maishiy-texnika</li>
-                            <li><CheckroomIcon />Kiyim </li>
-                        </ul>
-                    </div>
+                <Box>
+                    <Box sx={{ width: '100%', typography: 'body1' }}>
+                        <TabContext value={value}>
+                            <div className='headerBox container'>
+                                <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+                                    <div className='navBox'>
+                                        <TabList
+                                            orientation="vertical"
+                                            variant="scrollable"
+                                            onChange={handleChange}
+                                            aria-label="lab API tabs example"
+                                        >
+                                            {
+                                                catalogs.map(item => <Tab label={
+                                                    <p>
+                                                        {item.name}
+                                                    </p>
+                                                } value="1"
+                                                />)
+                                            }
 
 
-                    <div className="infoCatalogs">
-                        <h4>Elektronika </h4>
-                        <div class="parent">
-                            <div class="div1">
-                                <h5>ererkwekrw</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus eos earum, veniam harum nisi quia blanditiis perspiciatis laborum, ex ab qui laboriosam, illo doloremque? Officia unde dolorum doloremque numquam corrupti?</p>                            
-                            </div>
-                            <div class="div2">
-                            <h5>ererkwekrw</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus eos earum, veniam harum nisi quia blanditiis perspiciatis laborum, ex ab qui laboriosam, illo doloremque? Officia unde dolorum doloremque numquam corrupti?</p>                            
-                            </div>
-                            <div class="div3">
-                            <h5>ererkwekrw</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus eos earum, veniam harum nisi quia blanditiis perspiciatis laborum, ex ab qui laboriosam, illo doloremque? Officia unde dolorum doloremque numquam corrupti?</p>                            
-                            </div>
-                            <div class="div4">
-                            <h5>ererkwekrw</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus eos earum, veniam harum nisi quia blanditiis perspiciatis laborum, ex ab qui laboriosam, illo doloremque? Officia unde dolorum doloremque numquam corrupti?</p>                            
-                            </div>
-                            <div class="div5">
-                            <h5>ererkwekrw</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus eos earum, veniam harum nisi quia blanditiis perspiciatis laborum, ex ab qui laboriosam, illo doloremque? Officia unde dolorum doloremque numquam corrupti?</p>                            
-                            </div>
-                            <div class="div6">
-                            <h5>ererkwekrw</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus eos earum, veniam harum nisi quia blanditiis perspiciatis laborum, ex ab qui laboriosam, illo doloremque? Officia unde dolorum doloremque numquam corrupti?</p>                            
-                            </div>
-                            <div class="div7">
-                            <h5>ererkwekrw</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus eos earum, veniam harum nisi quia blanditiis perspiciatis laborum, ex ab qui laboriosam, illo doloremque? Officia unde dolorum doloremque numquam corrupti?</p>                            
-                            </div>
-                            <div class="div8">
-                            <h5>ererkwekrw</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus eos earum, veniam harum nisi quia blanditiis perspiciatis laborum, ex ab qui laboriosam, illo doloremque? Officia unde dolorum doloremque numquam corrupti?</p>                            
-                            </div>
-            
-                        </div>
-                    </div>
 
-                    
+                                        </TabList>
+                                    </div>
+                                </Box>
+
+                            </div>
+                        </TabContext>
+                    </Box>
+
                 </Box>
             </CatalogsStyled>
         </Drawer>
     );
 }
 
-export default Catalogs;
+export default Catalogs
