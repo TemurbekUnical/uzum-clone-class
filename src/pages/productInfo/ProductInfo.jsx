@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import AppContext from "../../App.context";
 import { useParams } from "react-router-dom";
 import { StyledProductInfo } from "./ProductInfo.style";
+import InfoSharx from "./components/InfoSharx";
 
 const ProductInfo = () => {
   const { nomi } = useParams();
@@ -40,7 +41,9 @@ const ProductInfo = () => {
           </div>
         </div>
         <div className="info">{bosilganMahsulot.nomi}</div>
+        
       </StyledProductInfo>
+      <InfoSharx/>
     </div>
   );
 };

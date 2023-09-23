@@ -8,6 +8,7 @@ import Catalogs from "./components/Catalogs";
 import AppContext from "../../App.context";
 
 import AutoAwesomeMotionOutlinedIcon from "@mui/icons-material/AutoAwesomeMotionOutlined";
+import Search from "./Search";
 
 const Navbar = ({ savatchaAlmashtirish, mahsulotlarniIzlash }) => {
   const navigate = useNavigate();
