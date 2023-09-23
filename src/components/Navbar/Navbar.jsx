@@ -1,13 +1,13 @@
 import React, { useContext } from "react";
 // import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
+import AutoAwesomeMotionOutlinedIcon from "@mui/icons-material/AutoAwesomeMotionOutlined";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import { useNavigate } from "react-router-dom";
-import { NavbarStyled } from "./Navbar.style";
-import Catalogs from "./components/Catalogs";
 import AppContext from "../../App.context";
-import AutoAwesomeMotionOutlinedIcon from "@mui/icons-material/AutoAwesomeMotionOutlined";
+import { NavbarStyled } from "./Navbar.style";
 import Search from "./Search";
+import Catalogs from "./components/Catalogs";
 
 const Navbar = ({ savatchaAlmashtirish, mahsulotlarniIzlash }) => {
   const navigate = useNavigate();
@@ -17,7 +17,6 @@ const Navbar = ({ savatchaAlmashtirish, mahsulotlarniIzlash }) => {
   } = useContext(AppContext);
   return (
     <NavbarStyled>
-      <Catalogs />
       <div className="nav-wrapper">
         <img
           onClick={() => navigate("/")}
@@ -29,15 +28,10 @@ const Navbar = ({ savatchaAlmashtirish, mahsulotlarniIzlash }) => {
           <AutoAwesomeMotionOutlinedIcon className="buttonIcon" />
           Katalog
         </div>
+        <Catalogs />
         <Search />
-        {/* <input
-          type="text"
-          className="search-input"
-          onChange={(e) => mahsulotlarniIzlash(e.target.value)}
-          placeholder="Mahsulotlar va turkumlar izlash... "
-        /> */}
 
-        <div className="button-wp" onClick={() => navigate("/login")}>
+        <div className="button-wp" onClick={() => navigate("/profile")}>
           {/*   <PersonOutlineOutlinedIcon />  */}
           <p>Kirish</p>
         </div>
@@ -51,17 +45,39 @@ const Navbar = ({ savatchaAlmashtirish, mahsulotlarniIzlash }) => {
       <div className="nav-content">
         <h5>Halol nasiya</h5>
         <ul>
-          <li>Elektironika</li>
-          <li>Maishiy texnika</li>
-          <li>Kiyim</li>
-          <li>Poyabzal</li>
-          <li>Aksesuarlar</li>
-          <li>Gozallik</li>
-          <li>Salomatlik</li>
-          <li>Uy-rozgor buyumlar</li>
-          <li>Qurilish va tamirlash </li>
-          <li>Avto tolovlar</li>
-          <li>Yana</li>
+          <li>
+            <a href="#">Elektironika</a>
+          </li>
+          <li>
+            <a href="#">Maishiy texnika</a>
+          </li>
+          <li>
+            <a href="#">Kiyim</a>
+          </li>
+          <li>
+            <a href="#">Poyabzal</a>
+          </li>
+          <li>
+            <a href="#">Aksesuarlar</a>
+          </li>
+          <li>
+            <a href="#">Gozallik</a>
+          </li>
+          <li>
+            <a href="#">Salomatlik</a>
+          </li>
+          <li>
+            <a href="#">Uy-rozgor buyumlar</a>
+          </li>
+          <li>
+            <a href="#">Qurilish va tamirlash</a>{" "}
+          </li>
+          <li>
+            <a href="#">Avto tolovlar</a>
+          </li>
+          <li>
+            <a href="#">Yana</a>
+          </li>
         </ul>
       </div>
     </NavbarStyled>

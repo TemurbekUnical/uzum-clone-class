@@ -4,6 +4,7 @@ import Autocomplete, { createFilterOptions } from '@mui/material/Autocomplete';
 import AppContext from '../../App.context';
 import { dataMahsulotlar } from '../../bekendData/mahsulotlar';
 import { useNavigate } from 'react-router-dom';
+import { SearchStyle } from './Search.style';
 
 
 const Search = () => {
@@ -13,10 +14,11 @@ const Search = () => {
     const filter = createFilterOptions();
     const navigate = useNavigate()
 
-    const [value, setValue] = useState(null)
+    const [value, ] = useState(null)
 
     return (
-        <Autocomplete
+        <SearchStyle >
+        <Autocomplete className='searching'
             value={value}
             onChange={(e) => mahsulotlarniIzlash(e.target.value)}
             filterOptions={(options, params) => {
@@ -37,7 +39,7 @@ const Search = () => {
             selectOnFocus
             clearOnBlur
             handleHomeEndKeys
-            id="free-solo-with-text-demo"
+            id="Mahsulotlar-va-turkumlar-izlash"
             options={dataMahsulotlar}
             getOptionLabel={(option) => {
                 // Value selected with enter, right from the input
@@ -59,9 +61,10 @@ const Search = () => {
             sx={{ width: 500 }}
             freeSolo
             renderInput={(params) => (
-                <TextField {...params} label="Free solo with text demo" />
+                <TextField {...params} className='search__product' label="Mahsulotlar va turkumlar izlash" />
             )}
         />
+        </SearchStyle>
     );
 }
 
