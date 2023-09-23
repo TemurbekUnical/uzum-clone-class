@@ -10,6 +10,9 @@ import { useNavigate } from "react-router-dom";
 import Catalogs from "./components/Catalogs";
 const Navbar = () => {
   const {
+    state: {
+      catalogs
+    },
     action: { setCatalogochiqmi, savatchaAlmashtirish },
   } = useContext(AppContext);
   const navigate = useNavigate()
@@ -44,39 +47,11 @@ const Navbar = () => {
       <div className="nav-content">
         <h5>Halol nasiya</h5>
         <ul>
-          <li>
-            <a href="#">Elektironika</a>
-          </li>
-          <li>
-            <a href="#">Maishiy texnika</a>
-          </li>
-          <li>
-            <a href="#">Kiyim</a>
-          </li>
-          <li>
-            <a href="#">Poyabzal</a>
-          </li>
-          <li>
-            <a href="#">Aksesuarlar</a>
-          </li>
-          <li>
-            <a href="#">Gozallik</a>
-          </li>
-          <li>
-            <a href="#">Salomatlik</a>
-          </li>
-          <li>
-            <a href="#">Uy-rozgor buyumlar</a>
-          </li>
-          <li>
-            <a href="#">Qurilish va tamirlash</a>{" "}
-          </li>
-          <li>
-            <a href="#">Avto tolovlar</a>
-          </li>
-          <li>
-            <a href="#">Yana</a>
-          </li>
+        {
+          catalogs.map(catalog => <li>
+            {catalog.name}
+          </li>)
+        }
         </ul>
       </div>
     </NavbarStyled>

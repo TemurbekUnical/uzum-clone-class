@@ -58,18 +58,12 @@ export const NavbarStyled = styled.div`
     ul {
       display: flex;
       list-style: none;
-      gap: 22px;
       li {
-        a {
-          text-decoration: none;
-          color: rgba(0, 0, 0, 0.7);
-          transition: 0.2s;
+        box-sizing: border-box;
+        font-weight: ;
+        margin-right: 10px;
+        cursor: pointer;
 
-          &:hover {
-            text-decoration: underline;
-            color: blue;
-          }
-        }
       }
     }
   }
