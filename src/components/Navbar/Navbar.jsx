@@ -3,28 +3,16 @@ import React, { useContext } from "react";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import AutoAwesomeMotionOutlinedIcon from "@mui/icons-material/AutoAwesomeMotionOutlined";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
-import { useNavigate } from "react-router-dom";
 import AppContext from "../../App.context";
-<<<<<<< HEAD
-import AutoAwesomeMotionOutlinedIcon from '@mui/icons-material/AutoAwesomeMotionOutlined';
 import Search from "./Search";
-
-
-
-
-
-=======
 import { NavbarStyled } from "./Navbar.style";
-import Search from "./Search";
+import { useNavigate } from "react-router-dom";
 import Catalogs from "./components/Catalogs";
->>>>>>> 45aff5f9b02b62dce883f3f37935c8e2fc252b36
-
-const Navbar = ({ savatchaAlmashtirish, mahsulotlarniIzlash }) => {
-  const navigate = useNavigate();
-
+const Navbar = () => {
   const {
-    action: { setCatalogochiqmi },
+    action: { setCatalogochiqmi, savatchaAlmashtirish },
   } = useContext(AppContext);
+  const navigate = useNavigate()
   return (
     <NavbarStyled>
       <div className="nav-wrapper">
@@ -38,26 +26,11 @@ const Navbar = ({ savatchaAlmashtirish, mahsulotlarniIzlash }) => {
           <AutoAwesomeMotionOutlinedIcon className="buttonIcon" />
           Katalog
         </div>
-<<<<<<< HEAD
-        <Search/>
-        {/* <input
-          type="text"
-          className="search-input"
-          onChange={(e) => mahsulotlarniIzlash(e.target.value)}
-          placeholder="Mahsulotlar va turkumlar izlash... "
-<<<<<<< HEAD
-        />
-        <div className="button-wp" onClick={() => navigate("/profile")}>
-=======
-        /> */}
-        
-        <div className="button-wp" onClick={() => navigate("/login")}>
-=======
+
         <Catalogs />
         <Search />
 
         <div className="button-wp" onClick={() => navigate("/profile")}>
->>>>>>> 45aff5f9b02b62dce883f3f37935c8e2fc252b36
           {/*   <PersonOutlineOutlinedIcon />  */}
           <p>Kirish</p>
         </div>
@@ -108,6 +81,5 @@ const Navbar = ({ savatchaAlmashtirish, mahsulotlarniIzlash }) => {
       </div>
     </NavbarStyled>
   );
-};
-
+}
 export default Navbar;
