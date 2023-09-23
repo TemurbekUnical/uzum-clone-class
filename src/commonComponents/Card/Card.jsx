@@ -18,11 +18,13 @@ const Card = ({ mahsulot }) => {
       <li className="mahsulot-card">
         <img
           onClick={() => navigate(`/product-info/${mahsulot.nomi}`)}
-          src={mahsulot.image}
+          src={mahsulot.image[0]}
           alt=""
         />
+        <div className="birga">
         <span className="nomi">{mahsulot.nomi}</span>
         <div className="narxi">${mahsulot.narxi}</div>
+        </div>
         <button
           className="button-bir"
           // disabled={mahsulot.tanlanganmi}

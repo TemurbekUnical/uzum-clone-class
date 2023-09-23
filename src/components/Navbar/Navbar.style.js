@@ -77,7 +77,7 @@ export const NavbarStyled = styled.div`
     align-items: center;
     text-align: center;
     margin-left: 50px;
-    margin-top: 10px;
-    width: 400px;
+    margin-top: 10px; 
+     width: 400px;
   }
 `;

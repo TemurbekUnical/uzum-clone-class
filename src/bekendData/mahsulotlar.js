@@ -33,20 +33,20 @@ export const dataMahsulotlar = [
     malumot: "Klaviatura Yesido KB-11",
     sotuvchi: "SUN store",
     muddat:"Oyiga 20",
-    haqida:[
-      {
-        qisqacha:"Matov qurilmali va yuvarlak burchakli qattiq plastikdan tuzilgan ergonomik dizayniga ega, bu uzun vaqt davomida foydalanishni ta'minlaydi." ,
-      },
-      {
-        qisqacha:"Yesido KB11 ko'plab Bluetooth-ni qo'llagan qurilmalar bilan mos keladi, shu jumladan kompyuterlar, noutbuklar, planshetlar va smartfonlar.",
-      },
-      {
-        qisqacha:"Klaviatura oson qo'llab-quvvatlanadi va tugmalar tugmalarini tezda nishonlashi bilan tez va qulay ishlashni ta'minlaydi.",
-      },
-      {
-        qisqacha:"Klaviatura Win blokini bloklangan funksiyaga ega, bu oyin yoki ish paytida bu tugmani xatolikka tushirishni oldini olishga yordam beradi.",
-      },
-    ]
+    // haqida:[
+    //   // {
+    //   //   qisqacha:"Matov qurilmali va yuvarlak burchakli qattiq plastikdan tuzilgan ergonomik dizayniga ega, bu uzun vaqt davomida foydalanishni ta'minlaydi." ,
+    //   // },
+    //   // {
+    //   //   qisqacha:"Yesido KB11 ko'plab Bluetooth-ni qo'llagan qurilmalar bilan mos keladi, shu jumladan kompyuterlar, noutbuklar, planshetlar va smartfonlar.",
+    //   // },
+    //   // {
+    //   //   qisqacha:"Klaviatura oson qo'llab-quvvatlanadi va tugmalar tugmalarini tezda nishonlashi bilan tez va qulay ishlashni ta'minlaydi.",
+    //   // },
+    //   // {
+    //   //   qisqacha:"Klaviatura Win blokini bloklangan funksiyaga ega, bu oyin yoki ish paytida bu tugmani xatolikka tushirishni oldini olishga yordam beradi.",
+    //   // },
+    // ]
 
   },
   {
