@@ -51,17 +51,28 @@ const Catalogs = () => {
                                             aria-label="lab API tabs example"
                                         >
                                             {
-                                                catalogs.map(item => <Tab label={
-                                                    <p>
-                                                        {item.name}
-                                                    </p>
-                                                } value="1"
+                                                catalogs.map(item => <Tab
+                                                    value={item.name}
+                                                    label={
+                                                        <p className='tab'>
+                                                            {item.name}
+                                                        </p>
+                                                    }
                                                 />)
                                             }
-
-
-
                                         </TabList>
+
+                                        {
+                                            catalogs.map(sub =>
+                                                <TabPanel value={sub.name} className='tabSubTitle'>
+                                                    {sub.items.map(
+                                                        subtitle => <p>{subtitle.name}</p>
+                                                    )}
+                                                </TabPanel>
+
+                                            )
+                                        }
+
                                     </div>
                                 </Box>
 
