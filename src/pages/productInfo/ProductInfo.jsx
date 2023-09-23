@@ -1,11 +1,10 @@
-import React, { useContext, useEffect, useState } from "react";
-import AppContext from "../../App.context";
-import { useParams } from "react-router-dom";
-import { StyledProductInfo } from "./ProductInfo.style";
-import { Divider, IconButton } from "@mui/material";
 import { ArrowForwardIos } from "@mui/icons-material";
-import HeartBrokenIcon from "@mui/icons-material/HeartBroken";
-import FavoriteIcon from "@mui/icons-material/Favorite";
+import { Divider } from "@mui/material";
+import React, { useContext, useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import AppContext from "../../App.context";
+import InfoSharx from "./components/InfoSharx";
+import { StyledProductInfo } from "./ProductInfo.style";
 
 const ProductInfo = () => {
   const { nomi } = useParams();
@@ -70,8 +69,9 @@ const ProductInfo = () => {
             <div>{bosilganMahsulot.haqida}</div>
           </div>
         </div>
-      </StyledProductInfo>
-    </div>
+      </StyledProductInfo >
+      <InfoSharx />
+    </div >
   );
 };
 
