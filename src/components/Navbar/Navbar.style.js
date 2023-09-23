@@ -1,25 +1,18 @@
 import styled from "styled-components";
 
 export const NavbarStyled = styled.div`
+  padding-top: 10px;
+
   .nav-wrapper {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     height: 50px;
     .logo {
       cursor: pointer;
     }
   }
-  .search-input {
-    border: none;
-    border: 1px solid rgba(0, 0, 0, 0.7);
-    display: block;
-    padding: 10px;
-    width: 500px;
-    font-size: 0.875rem;
-    border-radius: 5px;
 
-    margin: auto;
-  }
   .button-wr {
     margin-left: 50px;
     margin-right: -5px;
@@ -34,7 +27,7 @@ export const NavbarStyled = styled.div`
     width: 120px;
     height: 40px;
     background-color: rgba(49, 49, 196, 0.1);
-    .buttonIcon{
+    .buttonIcon {
       margin-right: 5px;
     }
   }
@@ -42,11 +35,20 @@ export const NavbarStyled = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
-    border-radius: 4px;
+
+    p {
+      padding: 5px 5px;
+      transition: all.2s;
+      cursor: pointer;
+      border-radius: 4px;
+
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.7);
+        color: #fff;
+      }
+    }
   }
   .button-wp:hover {
-    background-color: rgba(0, 0, 0, 0.7);
   }
   .nav-content {
     display: flex;
@@ -57,13 +59,25 @@ export const NavbarStyled = styled.div`
       display: flex;
       list-style: none;
       gap: 22px;
-      color: rgba(0, 0, 0, 0.7);
+      li {
+        a {
+          text-decoration: none;
+          color: rgba(0, 0, 0, 0.7);
+          transition: 0.2s;
+
+          &:hover {
+            text-decoration: underline;
+            color: blue;
+          }
+        }
+      }
     }
-    li:hover {
-      border-bottom: 3px solid black;
-      color: black;
-      transform: scale(1.1);
-      transition: 0.1s;
-    }
+  }
+  .serach__product {
+    align-items: center;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 10px;
+    width: 400px;
   }
 `;

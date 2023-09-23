@@ -1,53 +1,66 @@
 
-export const dataCatalog = [
+export const categories = [
     {
         name: "elektronika",
         items: [
             {
                 name: "smartfonlar",
-                
+                categories: [
+                    {
+                        name: '',
+                        link: ''
+                    }
+                ]
             }
         ]
     },
 
 
     {
-        name: "maishiy-texnika",
+        name: "elektronika",
         items: [
             {
-                name: "maishiy-texnika",
-                
+                name: "smartfonlar",
+                categories: [
+                    {
+                        name: '',
+                        link: ''
+                    }
+                ]
             }
         ]
     },
 
+
     {
-        name: "kiyim",
+        name: "elektronika",
         items: [
             {
-                name: "kiyim",
-                
-            }
-        ]
-    },
-    {
-        name: "poyabzallar",
-        items: [
-            {
-                name: "poyabzallar",
-                
-            }
-        ]
-    },
-     {
-        name: "aksessuarlar",
-        items: [
-            {
-                name: "aksessuarlar",
-                
+                name: "smartfonlar",
+                categories: [
+                    {
+                        name: '',
+                        link: ''
+                    }
+                ]
             }
         ]
     },
 
+
+    {
+        name: "elektronika",
+        items: [
+            {
+                name: "smartfonlar",
+                categories: [
+                    {
+                        name: '',
+                        link: ''
+                    }
+                ]
+            }
+        ]
+    },
 
 ]

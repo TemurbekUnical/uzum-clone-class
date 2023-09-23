@@ -23,7 +23,7 @@ const ProfileOrders = () => {
         </Box>
         <TabPanel value="1"></TabPanel>
         <TabPanel value="2"></TabPanel>
-        <TabPanel value="3">dvbmk</TabPanel>
+        <TabPanel value="3"></TabPanel>
       </TabContext>
 
     </Box>
