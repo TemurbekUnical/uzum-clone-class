@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const SlaydStyle = styled.div`
-  height: 500px;
-  margin: 0 0 100px;
+  height: 470px;
+  margin: 0 0 50px;
 .headerDiv{
 
 }
@@ -10,8 +10,8 @@ export const SlaydStyle = styled.div`
 .swiper {
   border-radius: 25px;
   width: 100%;
-  height: 550px;
-  margin-bottom: 400px;
+  height: 470px;
+  
 }
 
 .swiper-slide {

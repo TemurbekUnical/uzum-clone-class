@@ -54,6 +54,7 @@ export const StyledCard = styled.div`
       }
     }
     img {
+      object-fit: cover;
       border-radius: 10px;
       width: 100%;
       height: 250px;
@@ -82,12 +83,11 @@ export const StyledCard = styled.div`
     }
     .tanlanganmi {
       position: absolute;
-      top: 1rem;
-      right: 1rem;
+      top: 5px;
+      right: 5px;
       button {
-        background: #fffe;
         svg {
-          color: #f00;
+          color: rgb(137, 103, 240);;
         }
       }
     }

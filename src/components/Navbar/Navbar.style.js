@@ -1,5 +1,4 @@
 import styled from "styled-components";
-
 export const NavbarStyled = styled.div`
   padding-top: 10px;
 
@@ -14,6 +13,7 @@ export const NavbarStyled = styled.div`
   }
 
   .button-wr {
+    cursor: pointer;
     margin-left: 50px;
     margin-right: -5px;
     display: flex;
@@ -60,7 +60,6 @@ export const NavbarStyled = styled.div`
       list-style: none;
       li {
         box-sizing: border-box;
-        font-weight: ;
         margin-right: 10px;
         cursor: pointer;
 

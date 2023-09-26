@@ -26,11 +26,12 @@ const router = [
     path: "/sotib-olish",
     element: <SotibOlish />,
   },
+  
 
   // shu joyga yozamiz login ni page sini
 ];
 export default function PagesRoutes() {
-  return (
+  return (  
     <Routes>
       {router.map((route) => (
         <Route path={route.path} element={route.element} />

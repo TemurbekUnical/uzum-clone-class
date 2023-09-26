@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-// import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
+import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import AutoAwesomeMotionOutlinedIcon from "@mui/icons-material/AutoAwesomeMotionOutlined";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
@@ -27,7 +27,7 @@ const Navbar = () => {
         ></img>
         <div className="button-wr" onClick={() => setCatalogochiqmi(true)}>
           <AutoAwesomeMotionOutlinedIcon className="buttonIcon" />
-          Katalog
+          <p>Katalog</p>
         </div>
 
         <Catalogs />
@@ -35,7 +35,7 @@ const Navbar = () => {
 
         <div className="button-wp" onClick={() => navigate("/profile")}>
           {/*   <PersonOutlineOutlinedIcon />  */}
-          <p>Kirish</p>
+           <PersonOutlineOutlinedIcon/> <p>Kirish</p>
         </div>
         <div className="button-wp" onClick={() => navigate("/liked-products")}>
           <FavoriteBorderOutlinedIcon /> <p>Saralangan</p>

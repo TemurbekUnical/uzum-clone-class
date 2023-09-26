@@ -6,7 +6,7 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import { IconButton } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import AppContext from "../../App.context";
-
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 const Card = ({ mahsulot }) => {
   const {
     action: { mahsulotTanlash, onPlusClick, onMinusClick, tanlanganmiClick },
@@ -72,11 +72,11 @@ const Card = ({ mahsulot }) => {
         >
           {mahsulot.yoqdimi === true ? (
             <IconButton>
-              <FavoriteIcon fontSize="large" />
+              <FavoriteIcon />
             </IconButton>
           ) : (
             <IconButton>
-              <HeartBrokenIcon fontSize="large" />
+              <FavoriteBorderIcon />
             </IconButton>
           )}
         </div>

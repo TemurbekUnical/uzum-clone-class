@@ -1,12 +1,13 @@
 import "react-toastify/dist/ReactToastify.css";
-import { AppStyled } from "./App.style";
-import Footer from "./components/Footer/Footer";
+import { AppStyled } from "./App.style";  
 import Navbar from "./components/Navbar/Navbar";
 import NavbarCenter from "./components/NavbarCenter/NavbarCenter";
 import Savatcha from "./components/savatcha/Savatcha";
 import PagesRoutes from "./routes/Routes";
 import { useContext } from "react";
 import AppContext from "./App.context";
+import Korilgan from "./components/Korilgan/Korilgan";
+import FooterTitle from "./components/Footer/FooterTitle";
 
 const Layout = () => {
   const {
@@ -23,7 +24,8 @@ const Layout = () => {
         />
         <Savatcha />
         <PagesRoutes />
-        {/* <Footer /> */}
+       <Korilgan/>
+       <FooterTitle/>
       </AppStyled>
     </>
   );
