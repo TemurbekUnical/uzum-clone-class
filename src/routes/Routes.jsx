@@ -4,6 +4,7 @@ import LikedProducts from "./../pages/likedProducts/LikedProducts";
 import Mahsulotlar from "./../pages/mahsulotlar/Mahsulotlar";
 import Profile from "../pages/profile/Profile";
 import SotibOlish from "../pages/sotibOlish/SotibOlish";
+import TopshirishPunkti from "../pages/topshirishPunkti/TopshirishPunkti";
 
 const router = [
   {
@@ -25,6 +26,10 @@ const router = [
   {
     path: "/sotib-olish",
     element: <SotibOlish />,
+  },
+  {
+    path: "/about",
+    element: <TopshirishPunkti />,
   },
 
   // shu joyga yozamiz login ni page sini

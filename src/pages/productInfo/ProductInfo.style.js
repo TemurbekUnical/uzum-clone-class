@@ -37,6 +37,7 @@ export const StyledProductInfo = styled.div`
     }
   }
   .right {
+  
     margin-top: 50px;
     /* display: grid; */
     width: 500px;

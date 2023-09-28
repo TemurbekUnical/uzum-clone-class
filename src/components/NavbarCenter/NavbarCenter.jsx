@@ -1,29 +1,33 @@
-import React from 'react'
-import { Navbarstyled } from './NavbarCenter.style'
-import FmdGoodOutlinedIcon from '@mui/icons-material/FmdGoodOutlined';
+import React from "react";
+import { Navbarstyled } from "./NavbarCenter.style";
+import FmdGoodOutlinedIcon from "@mui/icons-material/FmdGoodOutlined";
+import { useNavigate } from "react-router-dom";
 const NavbarCenter = () => {
+
+  const navigate = useNavigate()
   return (
     <div>
-        <Navbarstyled>
+      <Navbarstyled>
         <div className="nav-right">
-        <FmdGoodOutlinedIcon/>  <p> Shahar:Toshkent  </p>
-        <p>Topshirish punkti</p> 
+          <FmdGoodOutlinedIcon /> <p className="shahar"> Shahar: <b>Toshkent</b> </p>
+          <b onClick={() => navigate("/about")} className="topshirish">Topshirish punkti</b>
         </div>
 
         <div className="nav-center">
-            <p>Buyurmangizni 1kunda bepul yetqazib beramz!</p>
+          <p>Buyurtmangizni 1kunda bepul yetkazib beramiz!</p>
         </div>
 
         <div className="nav-left">
-            <p>Saval-javablar</p>
-             <p>Buyurmalarim </p>
-             <p> <img src="http://www.w3.org/2000/svg" alt="" /> O'zbekcha</p>
+          <p>Savol-javoblar</p>
+          <p>Buyurtmalarim </p>
+          <p>
+            {" "}
+            <img src="" alt="" /> O'zbekcha
+          </p>
         </div>
-
-
-        </Navbarstyled>
+      </Navbarstyled>
     </div>
-  )
-}
+  );
+};
 
-export default NavbarCenter
+export default NavbarCenter;
