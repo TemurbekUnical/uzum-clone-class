@@ -1,22 +1,22 @@
 import React, { useContext } from "react";
-// import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
+import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import AutoAwesomeMotionOutlinedIcon from "@mui/icons-material/AutoAwesomeMotionOutlined";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
-import { useNavigate } from "react-router-dom";
 import AppContext from "../../App.context";
 
 import Search from "./Search";
 import { NavbarStyled } from "./Navbar.style";
-import Search from "./Search";
+import { useNavigate } from "react-router-dom";
 import Catalogs from "./components/Catalogs";
-
-const Navbar = ({ savatchaAlmashtirish, mahsulotlarniIzlash }) => {
-  const navigate = useNavigate();
-
+const Navbar = () => {
   const {
-    action: { setCatalogochiqmi },
+    state: {
+      catalogs
+    },
+    action: { setCatalogochiqmi, savatchaAlmashtirish },
   } = useContext(AppContext);
+  const navigate = useNavigate()
   return (
     <NavbarStyled>
       <div className="nav-wrapper">
@@ -28,22 +28,15 @@ const Navbar = ({ savatchaAlmashtirish, mahsulotlarniIzlash }) => {
         ></img>
         <div className="button-wr" onClick={() => setCatalogochiqmi(true)}>
           <AutoAwesomeMotionOutlinedIcon className="buttonIcon" />
-          Katalog
+          <p>Katalog</p>
         </div>
-        <Search/>
-        {/* <input
-          type="text"
-          className="search-input"
-          onChange={(e) => mahsulotlarniIzlash(e.target.value)}
-          placeholder="Mahsulotlar va turkumlar izlash... "
-        />
         <Catalogs />
         <Search />
 
         <div className="button-wp" onClick={() => navigate("/profile")}>
           {/*   <PersonOutlineOutlinedIcon />  */}
-          <p>Kirish</p>
-        {/* </div> */}
+           <PersonOutlineOutlinedIcon/> <p>Kirish</p>
+        </div>
         <div className="button-wp" onClick={() => navigate("/liked-products")}>
           <FavoriteBorderOutlinedIcon /> <p>Saralangan</p>
         </div>
@@ -54,43 +47,14 @@ const Navbar = ({ savatchaAlmashtirish, mahsulotlarniIzlash }) => {
       <div className="nav-content">
         <h5>Halol nasiya</h5>
         <ul>
-          <li>
-            <a href="#">Elektironika</a>
-          </li>
-          <li>
-            <a href="#">Maishiy texnika</a>
-          </li>
-          <li>
-            <a href="#">Kiyim</a>
-          </li>
-          <li>
-            <a href="#">Poyabzal</a>
-          </li>
-          <li>
-            <a href="#">Aksesuarlar</a>
-          </li>
-          <li>
-            <a href="#">Gozallik</a>
-          </li>
-          <li>
-            <a href="#">Salomatlik</a>
-          </li>
-          <li>
-            <a href="#">Uy-rozgor buyumlar</a>
-          </li>
-          <li>
-            <a href="#">Qurilish va tamirlash</a>{" "}
-          </li>
-          <li>
-            <a href="#">Avto tolovlar</a>
-          </li>
-          <li>
-            <a href="#">Yana</a>
-          </li>
+        {
+          catalogs.map(catalog => <li>
+            {catalog.name}
+          </li>)
+        }
         </ul>
       </div>
     </NavbarStyled>
   );
-};
-
+}
 export default Navbar;

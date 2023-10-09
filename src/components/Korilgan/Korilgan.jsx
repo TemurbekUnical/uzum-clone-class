@@ -1,9 +1,10 @@
+
 import React, { useContext } from "react";
 import AppContext from "../../App.context";
 import Card from "../../commonComponents/Card/Card";
 import { KorilganStyled } from "./Korilgan.style";
 
-const Footer = () => {
+const Korilgan = () => {
   const {
     state: { korilganMahsulotlar },
   } = useContext(AppContext);
@@ -21,4 +22,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default Korilgan;

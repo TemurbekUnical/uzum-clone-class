@@ -1,5 +1,4 @@
 import styled from "styled-components";
-
 export const NavbarStyled = styled.div`
   padding-top: 10px;
 
@@ -14,6 +13,7 @@ export const NavbarStyled = styled.div`
   }
 
   .button-wr {
+    cursor: pointer;
     margin-left: 50px;
     margin-right: -5px;
     display: flex;
@@ -58,18 +58,11 @@ export const NavbarStyled = styled.div`
     ul {
       display: flex;
       list-style: none;
-      gap: 22px;
       li {
-        a {
-          text-decoration: none;
-          color: rgba(0, 0, 0, 0.7);
-          transition: 0.2s;
+        box-sizing: border-box;
+        margin-right: 10px;
+        cursor: pointer;
 
-          &:hover {
-            text-decoration: underline;
-            color: blue;
-          }
-        }
       }
     }
   }
@@ -77,7 +70,7 @@ export const NavbarStyled = styled.div`
     align-items: center;
     text-align: center;
     margin-left: 50px;
-    margin-top: 10px;
-    width: 400px;
+    margin-top: 10px; 
+     width: 400px;
   }
 `;

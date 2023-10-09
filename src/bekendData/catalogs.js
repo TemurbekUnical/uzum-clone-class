@@ -4,13 +4,49 @@ export const categories = [
         name: "elektronika",
         items: [
             {
-                name: "smartfonlar",
-                categories: [
-                    {
-                        name: '',
-                        link: ''
-                    }
-                ]
+                name:"smartfonlar"
+            },
+            {
+                name:"naushniklar"
+            },
+            {
+                name:"Quvvatlagich"
+            },           
+        ]
+    },
+
+
+    {
+        name: "maishiy-texnika",
+        items: [
+            {
+                name: "Xolodilnik",
+            },
+            {
+                name: "Gaz-plita",
+            },
+            {
+                name: "Mikrotolqinli pech",
+            },
+            {
+                name: "Changyutgich",
+            },
+            {
+                name: "Kir yuvish mashinasi",
+            },
+            {
+                name: "Televizor",
+            },
+
+        ]
+    },
+
+    {
+        name: "elektronika",
+        items: [
+            {
+                name: "shim",
+
             }
         ]
     },
@@ -20,47 +56,75 @@ export const categories = [
         name: "elektronika",
         items: [
             {
-                name: "smartfonlar",
-                categories: [
-                    {
-                        name: '',
-                        link: ''
-                    }
-                ]
+                name: "poyabzallar",
+
             }
         ]
     },
-
-
     {
-        name: "elektronika",
+        name: "aksessuarlar",
         items: [
             {
-                name: "smartfonlar",
-                categories: [
-                    {
-                        name: '',
-                        link: ''
-                    }
-                ]
+                name: "aksessuarlar",
+
             }
         ]
     },
-
-
     {
-        name: "elektronika",
+        name: "gozallik",
         items: [
             {
-                name: "smartfonlar",
-                categories: [
-                    {
-                        name: '',
-                        link: ''
-                    }
-                ]
+                name: "aksessuarlar",
+
             }
         ]
     },
+    {
+        name: "salomatlik",
+        items: [
+            {
+                name: "aksessuarlar",
+
+            }
+        ]
+    },
+    {
+        name: "Uy-rozgor buyumlari",
+        items: [
+            {
+                name: "aksessuarlar",
+
+            }
+        ]
+    },
+    {
+        name: "Qurilish va ta'mirlash",
+        items: [
+            {
+                name: "aksessuarlar",
+
+            }
+        ]
+    },
+    {
+        name: "Avtotovarlar",
+        items: [
+            {
+                name: "aksessuarlar",
+
+            }
+        ]
+    },
+    {
+        name: "Bolalar tovarlari",
+        items: [
+            {
+                name: "aksessuarlar",
+
+            }
+        ]
+    },
+    
+
 
 ]

@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const StyledProductInfo = styled.div`
   display: flex;
   justify-content: space-between;
+  margin-bottom: 100px;
   /* align-items: center; */
   & > div {
     width: 50%;

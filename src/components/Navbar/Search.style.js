@@ -9,5 +9,6 @@ export const SearchStyle = styled.div`
 .search__product{
     /* width: 400px; */
     /* margin-left: 50px; */
+    
 }
 `;

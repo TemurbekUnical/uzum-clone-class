@@ -8,5 +8,4 @@ export const KorilganStyled = styled.div`
 }
 
 
-
 `

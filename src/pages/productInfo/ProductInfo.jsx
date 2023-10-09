@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useContext, useEffect, useState } from "react";
 import AppContext from "../../App.context";
 import { useParams } from "react-router-dom";
@@ -10,6 +11,15 @@ import { ArrowForwardIos } from "@mui/icons-material";
 import HeartBrokenIcon from "@mui/icons-material/HeartBroken";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 >>>>>>> 45aff5f9b02b62dce883f3f37935c8e2fc252b36
+=======
+import { ArrowForwardIos } from "@mui/icons-material";
+import { Divider } from "@mui/material";
+import React, { useContext, useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import AppContext from "../../App.context";
+import InfoSharx from "./components/InfoSharx";
+import { StyledProductInfo } from "./ProductInfo.style";
+>>>>>>> 34cfe2f5155be3b58686dbd3715e1cf814659be9
 
 const ProductInfo = () => {
   const { nomi } = useParams();
@@ -27,7 +37,7 @@ const ProductInfo = () => {
     (mahsulot) => mahsulot.nomi === nomi
   );
 
-  const [activeImage, setActiveImage] = useState(bosilganMahsulot.image[0]);
+  const [activeImage, setActiveImage] = useState(bosilganMahsulot.image[1]);
 
   return (
     <div>
@@ -48,9 +58,12 @@ const ProductInfo = () => {
           </div>
         </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <div className="info">{bosilganMahsulot.nomi}</div>
         
 =======
+=======
+>>>>>>> 34cfe2f5155be3b58686dbd3715e1cf814659be9
         <div className="right">
           {/* <div className="info h1">{bosilganMahsulot.nomi}</div> */}
           <div className="info p">{bosilganMahsulot.malumot}</div>
@@ -66,21 +79,13 @@ const ProductInfo = () => {
               <p className="narxx">{bosilganMahsulot.narxi}$</p>
             </div>
           </div>
-          <div className="muddat">
-            <div className="yellow">{bosilganMahsulot.muddat} $ dan</div>
-            <p>muddatli to'lov</p>
-            <div className="arrow">
-              <ArrowForwardIos />
-            </div>
-          </div>
-          <div className="haqida">
-            <h1>Mahsulot haqida qisqacha:</h1>
-            <div>{bosilganMahsulot.haqida}</div>
-          </div>
         </div>
+<<<<<<< HEAD
 >>>>>>> 45aff5f9b02b62dce883f3f37935c8e2fc252b36
+=======
+>>>>>>> 34cfe2f5155be3b58686dbd3715e1cf814659be9
       </StyledProductInfo>
-      <InfoSharx/>
+      <InfoSharx bosilganMahsulot={bosilganMahsulot} />
     </div>
   );
 };
