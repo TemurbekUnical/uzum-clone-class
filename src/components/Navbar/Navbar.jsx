@@ -5,15 +5,11 @@ import AutoAwesomeMotionOutlinedIcon from "@mui/icons-material/AutoAwesomeMotion
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import { useNavigate } from "react-router-dom";
 import AppContext from "../../App.context";
-<<<<<<< HEAD
 
-import AutoAwesomeMotionOutlinedIcon from "@mui/icons-material/AutoAwesomeMotionOutlined";
 import Search from "./Search";
-=======
 import { NavbarStyled } from "./Navbar.style";
 import Search from "./Search";
 import Catalogs from "./components/Catalogs";
->>>>>>> 45aff5f9b02b62dce883f3f37935c8e2fc252b36
 
 const Navbar = ({ savatchaAlmashtirish, mahsulotlarniIzlash }) => {
   const navigate = useNavigate();
@@ -34,7 +30,6 @@ const Navbar = ({ savatchaAlmashtirish, mahsulotlarniIzlash }) => {
           <AutoAwesomeMotionOutlinedIcon className="buttonIcon" />
           Katalog
         </div>
-<<<<<<< HEAD
         <Search/>
         {/* <input
           type="text"
@@ -42,11 +37,9 @@ const Navbar = ({ savatchaAlmashtirish, mahsulotlarniIzlash }) => {
           onChange={(e) => mahsulotlarniIzlash(e.target.value)}
           placeholder="Mahsulotlar va turkumlar izlash... "
         />
-=======
         <Catalogs />
         <Search />
 
->>>>>>> 45aff5f9b02b62dce883f3f37935c8e2fc252b36
         <div className="button-wp" onClick={() => navigate("/profile")}>
           {/*   <PersonOutlineOutlinedIcon />  */}
           <p>Kirish</p>
