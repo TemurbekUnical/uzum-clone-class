@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-import React, { useContext, useEffect, useState } from "react";
-import AppContext from "../../App.context";
-import { useParams } from "react-router-dom";
-import { StyledProductInfo } from "./ProductInfo.style";
-<<<<<<< HEAD
-import InfoSharx from "./components/InfoSharx";
-=======
-import { Divider, IconButton } from "@mui/material";
-import { ArrowForwardIos } from "@mui/icons-material";
-import HeartBrokenIcon from "@mui/icons-material/HeartBroken";
-import FavoriteIcon from "@mui/icons-material/Favorite";
->>>>>>> 45aff5f9b02b62dce883f3f37935c8e2fc252b36
-=======
 import { ArrowForwardIos } from "@mui/icons-material";
 import { Divider } from "@mui/material";
 import React, { useContext, useEffect, useState } from "react";
@@ -19,7 +5,6 @@ import { useParams } from "react-router-dom";
 import AppContext from "../../App.context";
 import InfoSharx from "./components/InfoSharx";
 import { StyledProductInfo } from "./ProductInfo.style";
->>>>>>> 34cfe2f5155be3b58686dbd3715e1cf814659be9
 
 const ProductInfo = () => {
   const { nomi } = useParams();
@@ -57,13 +42,6 @@ const ProductInfo = () => {
             ))}
           </div>
         </div>
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <div className="info">{bosilganMahsulot.nomi}</div>
-        
-=======
-=======
->>>>>>> 34cfe2f5155be3b58686dbd3715e1cf814659be9
         <div className="right">
           {/* <div className="info h1">{bosilganMahsulot.nomi}</div> */}
           <div className="info p">{bosilganMahsulot.malumot}</div>
@@ -80,10 +58,6 @@ const ProductInfo = () => {
             </div>
           </div>
         </div>
-<<<<<<< HEAD
->>>>>>> 45aff5f9b02b62dce883f3f37935c8e2fc252b36
-=======
->>>>>>> 34cfe2f5155be3b58686dbd3715e1cf814659be9
       </StyledProductInfo>
       <InfoSharx bosilganMahsulot={bosilganMahsulot} />
     </div>
