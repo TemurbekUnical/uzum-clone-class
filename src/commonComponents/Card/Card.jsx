@@ -1,11 +1,11 @@
-import React, { useContext, useState } from "react";
-import { StyledCard } from "./Card.style";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
-import HeartBrokenIcon from "@mui/icons-material/HeartBroken";
 import FavoriteIcon from "@mui/icons-material/Favorite";
+import HeartBrokenIcon from "@mui/icons-material/HeartBroken";
 import { IconButton } from "@mui/material";
+import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import AppContext from "../../App.context";
+import { StyledCard } from "./Card.style";
 
 const Card = ({ mahsulot }) => {
   const {
@@ -22,8 +22,8 @@ const Card = ({ mahsulot }) => {
           alt=""
         />
         <div className="birga">
-        <span className="nomi">{mahsulot.nomi}</span>
-        <div className="narxi">${mahsulot.narxi}</div>
+          <span className="nomi">{mahsulot.nomi}</span>
+          <div className="narxi">${mahsulot.narxi}</div>
         </div>
         <button
           className="button-bir"

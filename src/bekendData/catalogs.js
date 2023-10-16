@@ -4,67 +4,45 @@ export const categories = [
         name: "elektronika",
         items: [
             {
-                name:"smartfonlar"
-            },
-            {
-                name:"naushniklar"
-            },
-            {
-                name:"Quvvatlagich"
-            },           
-        ]
-    },
-
-
-    {
-        name: "maishiy-texnika",
-        items: [
-            {
-                name: "Xolodilnik",
-            },
-            {
-                name: "Gaz-plita",
-            },
-            {
-                name: "Mikrotolqinli pech",
-            },
-            {
-                name: "Changyutgich",
-            },
-            {
-                name: "Kir yuvish mashinasi",
-            },
-            {
-                name: "Televizor",
-            },
-
-        ]
-    },
-
-    {
-        name: "kiyim",
-        items: [
-            {
-                name: "shim",
-
+                name: "smartfonlar",
+                categories: [
+                    {
+                        name: '',
+                        link: ''
+                    }
+                ]
             }
         ]
     },
+
+
     {
-        name: "poyabzallar",
+        name: "elektronika",
         items: [
             {
-                name: "poyabzallar",
-
+                name: "smartfonlar",
+                categories: [
+                    {
+                        name: '',
+                        link: ''
+                    }
+                ]
             }
         ]
     },
+
+
     {
-        name: "aksessuarlar",
+        name: "elektronika",
         items: [
             {
-                name: "aksessuarlar",
-
+                name: "smartfonlar",
+                categories: [
+                    {
+                        name: '',
+                        link: ''
+                    }
+                ]
             }
         ]
     },
@@ -124,5 +102,20 @@ export const categories = [
     },
     
 
+
+    {
+        name: "elektronika",
+        items: [
+            {
+                name: "smartfonlar",
+                categories: [
+                    {
+                        name: '',
+                        link: ''
+                    }
+                ]
+            }
+        ]
+    },
 
 ]

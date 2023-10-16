@@ -8,12 +8,14 @@ import Search from "./Search";
 import { NavbarStyled } from "./Navbar.style";
 import { useNavigate } from "react-router-dom";
 import Catalogs from "./components/Catalogs";
+
+
 const Navbar = () => {
   const {
     state: {
       catalogs
     },
-    action: { setCatalogochiqmi, savatchaAlmashtirish },
+    action: { setCatalogochiqmi, savatchaAlmashtirish,mahsulotlarniIzlash },
   } = useContext(AppContext);
   const navigate = useNavigate()
   return (
@@ -33,6 +35,7 @@ const Navbar = () => {
         <Catalogs />
         <Search />
 
+{/* >>>>>>> ce8eb54d6c624dc3ba19b65c93369de6182baacc */}
         <div className="button-wp" onClick={() => navigate("/profile")}>
           {/*   <PersonOutlineOutlinedIcon />  */}
           <p>Kirish</p>

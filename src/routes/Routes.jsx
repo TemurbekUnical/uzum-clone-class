@@ -28,7 +28,7 @@ const router = [
     element: <SotibOlish />,
   },
   {
-    path: "/about",
+    path: "/about/*",
     element: <TopshirishPunkti />,
   },
 

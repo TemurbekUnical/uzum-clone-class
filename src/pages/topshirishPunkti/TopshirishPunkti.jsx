@@ -9,8 +9,8 @@ import Vakansiya from "./components/Vakansiya";
 const TopshirishPunkti = () => {
   return (
     <TopshirishPunktiStyled>
-        <h1>Uzum</h1>
-        <Divider/>
+
+       
         <TopshirishPunktiSidebar />
         <Routes>
         <Route path="delivery-points" element={<Punkt />} />

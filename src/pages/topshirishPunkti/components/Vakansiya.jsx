@@ -9,8 +9,8 @@ const Vakansiya = () => {
         kelishingiz haqida <br /> so’zlab bering va o’z rezyumengizni yuboring
       </p>
       <div>
-        <button></button>
-        <button></button>
+        <button>UZUM MARKETʼDA ISHLASHNI ISTAYMAN</button>
+        <button>Telegram bot - @Uzum_jbot</button>
       </div>
       <ul>
         <p>Oʻzingizga mos kasbni topadigan ish profillari:</p>
@@ -19,37 +19,33 @@ const Vakansiya = () => {
             - Buxgalteriya va moliya
 
           </p>
-        </li>
-        <li>
+       
           <p>
             - Uzum Market yetkazib berish xizmati
             
           </p>
-        </li>
-        <li>
+        
           <p>
             - Maʼmuriy xodim
             
           </p>
-        </li>
-        <li>
+        
           <p>
             - Ombor logistikasi
             
           </p>
-        </li>
-        <li>
+     
           <p>
             - Aloqa markazi
             
           </p>
-        </li>
-        <li>
+       
           <p>
             - Xodimlar boshqaruvi
           </p>
         </li>
       </ul>
+      
     </div>
   );
 };

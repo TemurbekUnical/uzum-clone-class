@@ -1,17 +1,16 @@
-import { ArrowForwardIos } from "@mui/icons-material";
 import { Divider } from "@mui/material";
-import React, { useContext, useEffect, useState } from "react";
+import { default as React, useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import AppContext from "../../App.context";
-import InfoSharx from "./components/InfoSharx";
 import { StyledProductInfo } from "./ProductInfo.style";
+import InfoSharx from "./components/InfoSharx";
 
 const ProductInfo = () => {
   const { nomi } = useParams();
 
   const {
-    state: { mahsulotlar, korilganMahsulotlar, mahsulot },
-    action: { setKorilganMahsulotlar, mahsulotTanlash, tanlanganmiClick },
+    state: { mahsulotlar, korilganMahsulotlar,},
+    action: { setKorilganMahsulotlar, },
   } = useContext(AppContext);
 
   useEffect(() => {
